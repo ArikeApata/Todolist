@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: hsl(0, 80%, 8%);
+    color: rgb(22, 11, 0);
+
+}
+header {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    margin: 0, auto;
+    width: 100%;
+
+}
+header h1{
+    margin-bottom: 5%;
+    color: whitesmoke;
+    font-weight: 300px;
+    font-size: 22px;
+}
+form{
+    display: flex;
+    /* width: 50%;
+    text-align: center; */
+
+}
+#alltask input{
+    appearance: auto;
+}
+#alltask label{
+    display: ;
+    color: yellow;
+}
+input {
+    border: none;
+    background: none;
+    appearance: none;
+    outline: none;
+}
+button{
+    border: none;
+    background: none;
+    appearance: none;
+    outline: none; 
+}
+#new-task{
+    flex:1 1 0%;
+    border-radius: 20px;
+    padding: 2%;
+    background-color: rgb(227, 225, 219);
+    margin-right: 2%;
+    font-size: 20px;
+}
+#submit-task{
+    color: beige;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 16px;
+    font-weight: 500;
+    -webkit-text-fill-color: whitesmoke;
+    background-color: rgb(87, 8, 8);
+}
+#submit-task:hover{
+    opacity: 1.2;
+}
+#submit-task:active{
+    opacity: 0.6;
+}
+main{
+    flex:1 1 0%;
+    padding: 2% 1%;
+    max-width: 800px;
+    margin: 0, auto;
+    width: 80%;
+    min-width: 450px;
+}
+.task-list{
+    padding: 1rem;
+}
+.task-list h2{
+    color: white;
+    margin-bottom: 1rem;
+}
+#tasks .task{
+    display: flex;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    background-color: azure;
+    font-size: 16px;
+    font-weight: 100;
+    padding: 14px;
+
+}
+#task .tasks .content .text{
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    border-radius: 1rem;
+    margin: 0 auto;
+    transition: 0.3s;
+    color: black;
+}
+/* #tasks .task .content .text:not(:read-only){
+    color: aquamarine;
+} */
+.task .action{
+    display: flex;
+}
+.task .action button{
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 0 0.5rem;
+
+}
+.task .action button:hover{
+    opacity: 0.8;
+}
+.task .action button:active{
+    opacity: 0.2;
+    
+}
+.task .edit{
+    color: antiquewhite;
+    background-color: black;
+    margin-right: 8px;
+    border-radius: 1rem;
+}
+.task .delete{
+    background-color: crimson;
+    color: antiquewhite;
+    border-radius: 1rem;
+}
+/* .tasks .delete:hover{
+    opacity: 1;
+}
+.tasks .delete:active{
+    opacity: 0.1;
+} */
+
+
+/* .tasks .action .add{
+
+} */
